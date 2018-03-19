@@ -1,7 +1,7 @@
 library(ggplot2)
 library(plotly)
 
-t_pure <- ggplot(data.frame(x = c(-4, 4)), aes(x = x)) +
+t_pure <- ggplot(data.frame(x = c(-5, 5)), aes(x = x)) +
   stat_function(fun = dt, args = list(df = 12-4)) 
 ggplotly(t_pure)
 
